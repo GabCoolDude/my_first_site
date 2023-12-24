@@ -2,7 +2,12 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <!--description of the website, used by search engines (Google)-->
         <meta name="description" content="This is an awesome website">
+        <meta name="author" content="Gab">
+        <meta name="keywords" content="HTML, Tutorial">
+        <!--very important to make your website work on mobile and other-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"
         <title>Gab's website</title>
     </head>
     <body>
@@ -34,21 +39,24 @@
         <div>div1</div>
         <div>div2</div>
 
-        <!--this is only to create a textbox, to do stuff with the input, you need javascript and probably a backend-->
-        <input type="text" value="Enter your name"/> 
-        <input type="password"/>
-        <input type="date"/>
-        <input type="range"/>
-        <input type="email"/>
-        <input type="file"/>
-        <input type="submit"/>
-        <input type="checkbox"/>
+        <form> <!--most of the time, is wrapper for input-->
+            <!--this is only to create a textbox, to do stuff with the input, you need javascript and probably a backend-->
+            <input type="text" value="Enter your name"/> 
+            <input type="password"/>
+            <input type="date"/>
+            <input type="range"/>
+            <input type="email"/>
+            <input type="file"/>
+            <input type="submit"/>
+            <input type="checkbox"/>
         
-        <!--can only choose one at a time-->
-        <input name="btn1"type="radio"/>
-        <input name="btn1"type="radio"/>
-        <!-- there are many more types of input, just look at this page :
-        https://www.w3schools.com/TagS/att_input_type.asp-->
+            <!--can only choose one at a time-->
+            <input name="btn1"type="radio"/>
+            <input name="btn1"type="radio"/>
+            <!-- there are many more types of input, just look at this page :
+            https://www.w3schools.com/TagS/att_input_type.asp-->
+        </form>
+        
 
         <textarea rows ="10" cols="30">
             Enter a paragraph
@@ -111,7 +119,10 @@
         <br/>
         <!--youtube video, this is the video i used to do all of this-->
         <iframe width="560" height="315" src="https://www.youtube.com/embed/pQN-pnXPaVg?si=6XCAFSQZ90EkCmSR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-       
+        <br/>
+        <iframe width="1000" height="800" frameborder="0" src="https://www.giraffeacademy.com/">Sorry, your browser does not support iframes</iframe>
+
+
         <!-- organisation
 
             <header>

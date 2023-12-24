@@ -2,150 +2,34 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <!--description of the website, used by search engines (Google)-->
         <meta name="description" content="This is an awesome website">
         <meta name="author" content="Gab">
-        <meta name="keywords" content="HTML, Tutorial">
-        <!--very important to make your website work on mobile and other-->
+        <meta name="keywords" content="CSS, Tutorial">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Gab's CSS tutorial website</title>
     </head>
-    <body>
-        <h2>Gab's CSS tutorial website</h2> <!--this is a header, they range from 1 to 6-->
-        <!--big,small,sub,sup can be used 
-        in other things than paragraphs too(<p>)-->
-        <hr/> <!--creates horizontal line-->
-        <p><big>Welcome</big> <small>to</small> <b><i>my domain</i></b></p>
-        <br/> <!--the equivalent of pressing Enter in Word-->
-        <!--woah this is a comment-->
-        <p>Welcome</p> <!--this is a paragraph (line of text)-->
-        <p>H<sub>2</sub>0</p>
-        <p>10<sup>2</sup></p>
 
-        <!-- these are inline elements,they will be on the same line-->
-        <a href="#">link1</a> 
-        <a href="#">link2</a>
+    <!--there are hundreds of CSS attributes :
+    (width, color, height, font-size, etc)you can get a good look at them at 
+    https://www.w3schools.com/cssref/index.php-->
 
-        <!--these are "block" elements, they will not go on the same line-->
-        <p>Hi</p>
-        <p>Hello</p>
-
-        <!--divs are for block,
-        spans are for inline elements,
-        they are useful for CSS styling-->
-        <span>span1</span>
-        <span>span2</span>
-
-        <div>div1</div>
-        <div>div2</div>
-
-        <form> <!--most of the time, is wrapper for input-->
-            <!--this is only to create a textbox, to do stuff with the input, you need javascript and probably a backend-->
-            <input type="text" value="Enter your name"/> 
-            <input type="password"/>
-            <input type="date"/>
-            <input type="range"/>
-            <input type="email"/>
-            <input type="file"/>
-            <input type="submit"/>
-            <input type="checkbox"/>
+    <body style="color: blue; font-size: 20px;"> <!--sets color and font size-->
         
-            <!--can only choose one at a time-->
-            <input name="btn1"type="radio"/>
-            <input name="btn1"type="radio"/>
-            <!-- there are many more types of input, just look at this page :
-            https://www.w3schools.com/TagS/att_input_type.asp-->
-        </form>
-        
+        <header style="color: red;">
+            <p>Gab's CSS tutorial website</p>
+        </header>
 
-        <textarea rows ="10" cols="30">
-            Enter a paragraph
-        </textarea>
+        <main style="background-color: blueviolet;"> <!-- set background color-->
+            <p>This is a paragraph</p>
+        </main> 
 
-        
-
-        <table> <!-- basic table -->
-            <thead><!-- it also has head and body stuff-->
-                <caption><h2>List of numbers</h2></caption><!--creates a caption-->
-                <tr> <!-- creates a row -->
-                    <th>num1</th> <!-- th stands for tableheader -->
-                    <th>num2</th>
-                    <th>num3</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td>one</td> <!-- td is for stuff you want to write in the table-->
-                    <td colspan="2">two</td> <!--collon span-->
-                    <td >three</td>
-                </tr>
-
-                <tr>
-                    <td>four</td>
-                    <td>five</td>
-                    <td>six</td>
-                </tr>
-            </tbody>
-            
-        </table>
-
-        <dl>
-            <dt>this is the letter a</dt>
-            <dd>a</dd>
-        </dl>
-
-        <ol> <!-- organised list -->
-            <li>a</li> <!--well its a list alright-->
-            <li>b</li>
-            <ul> <!-- unorganised list-->
-                <li>a</li>
-            </ul>
-            <li>c</li>
-            <li>d</li>
-        </ol>
-        
-        <!--replaces the current page-->
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">not a rickroll</a>
-        <!--does not replace the current page-->
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><h1>not a rickroll 2</h1></a>
-        <a href="page2.html">Page 2</a> <!-- links to different page-->
+        <div style="border: 3px solid black; width: 200px; "> <!--creates a black border-->
+            <p>This is also a paragraph</p>
+        </div>
         <br/>
-        <br/>
-        <a href="shit idk/page3.html">Page 3</a>
-        <br/>
-        <!-- cat image -->
-        <img heigth="100" width="100" src="https://static.vecteezy.com/system/resources/thumbnails/021/830/103/small/realistic-cute-cat-cartoon-style-digital-artwork-free-png.png" alt="This image was deleted"/>
-        <br/>
-        <!--youtube video, this is the video i used to do all of this-->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/pQN-pnXPaVg?si=6XCAFSQZ90EkCmSR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <br/>
-        <iframe width="1000" height="800" frameborder="0" src="https://www.giraffeacademy.com/">Sorry, your browser does not support iframes</iframe>
-
-
-        <!-- organisation
-
-            <header>
-                <nav>
-
-                </nav>
-            </header>
-
-            <main>
-                <article>
-                    <section>
-                        <aside>
-                        
-                        </aside>
-                            section and article dont have to
-                            go together but they get along really well
-                    </section>
-                </article>
-            </main>
-
-            <footer>
-
-            </footer>
--->
+        <div style="border: 2px solid black; height: 50%; max-width: 500px;"> <!--width and height can also be put in % and others-->
+            <p>This is also a paragraph</p>
+        </div>
+     
     </body>
 </html>

@@ -9,11 +9,19 @@
         <title>Gab's CSS tutorial website</title>
     </head>
 
-    <!--there are hundreds of CSS attributes(width, color, height, font-size, etc)
+    <!--tutorial i used :
+    https://www.youtube.com/watch?v=WZ2uqGkHoR0&list=PLLAZ4kZ9dFpNO7ScZFr-WTmtcBY3AN1M7&index=2 -->
+
+    <!--there are hundreds of CSS attributes
+    (width, color, height, font-size, etc)
     ,you can get a good look at them at 
     https://www.w3schools.com/cssref/index.php -->
-    <!--list of all colors: https://www.w3schools.com/colors/colors_names.asp -->
-    <!--color picker: https://www.w3schools.com/colors/colors_picker.asp -->
+
+    <!--list of all colors: 
+    https://www.w3schools.com/colors/colors_names.asp -->
+
+    <!--color picker: 
+    https://www.w3schools.com/colors/colors_picker.asp -->
 
     <body style="color: blue; font-size: 20px;"> <!--sets color and font size-->
         
@@ -21,17 +29,40 @@
             <p>Gab's CSS tutorial website</p>
         </header>
 
-        <main style="background-color: blueviolet;"> <!--sets background color-->
-            <p>This is a paragraph</p>
-        </main> 
+        <main> <!--sets background color-->
+            <div style="background-color: blueviolet;">
+                <p>This is a paragraph</p>
+            </div>
+            
 
-        <div style="border: 3px solid black; width: 200px; "> <!--creates a black border-->
-            <p>This is also a paragraph</p>
-        </div>
-        <br/>
-        <div style="border: 2px solid black; height: 50%; max-width: 500px;"> <!--width and height can also be put in % and others-->
-            <p>This is also a paragraph</p>
-        </div>
+            <div style="border: 3px solid black; width: 200px; "> <!--creates a black border-->
+                <p>This is also a paragraph</p>
+            </div>
+
+            <br/>
+
+            <div style="border: 2px solid black; height: 50%; max-width: 500px;"> <!--width and height can also be put in % and others-->
+                <p>This is also a paragraph</p>
+            </div>
+
+            <br/>
+
+            <div style="color: black; padding-top: 10px; padding-bottom: 10px;background-color: aqua;">
+                Padding is extra space on the outside
+            </div>
+
+            <br/>
+                                    <!-- bottom right  top left -->
+            <div style="color: black; margin: 25px  50px 25px 50px; background-color: aqua;">
+                , margin is the same for the inside
+            </div>
+
+             <!--careful using negative margins-->
+            <div style="color: black; margin-top: -60px;">
+                Because stuff like this happens (overlap)
+            </div>
+            
+        </main>
      
     </body>
 </html>

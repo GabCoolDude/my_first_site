@@ -61,7 +61,41 @@
             <div style="color: black; margin-top: -60px;">
                 Because stuff like this happens (overlap)
             </div>
-            
+            <br/>
+            <!--float and display properties-->
+            <header>
+
+                <ul style="float:right; background-color:lightblue;">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact Us</li>
+                    <li>Blogs</li>
+                </ul>
+
+                <ul style="background-color:lightblue;">
+                    <li style="display: none;">Home</li>
+                    <li style="display: none;">About</li>
+                    <li style="display: inline;">Contact Us</li>
+                    <li style="display: inline;">Blogs</li>
+                </ul>
+           
+                <p>You can use the display and float CSS attributes 
+                to change the way that element on your website 
+                are displayed on the screen</p>
+             </header>
+
+        <!--positioning-->
+                <!--use top,bottom,right and left to change the position relatively-->
+        <div style="position: relative; left: 20px; bottom: 10px; width:90px; height:90px; background-color:blue;"></div>
+        
+        <div style="width:100px; height:100px; background-color:red;"></div>
+
+        <div style="position: absolute; left: 300px; top: 100px; width:90px; height:90px; background-color:blue;"></div>
+             <!--fixed is relative to the viewport(mobile, ultrawide,etc..),
+            will stay in place no matter what
+            very useful for top or bottom bar-->
+        <div style="position:fixed; bottom:0px; right: 0px; width:100px; height:100px; background-color:red;"></div>
+
         </main>
      
     </body>

@@ -7,6 +7,7 @@
         <meta name="keywords" content="CSS, Tutorial">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Gab's CSS tutorial website</title>
+        <link rel="stylesheet" href="style.css"> <!--link to style.css-->
     </head>
 
     <!--tutorial i used :
@@ -121,7 +122,7 @@
          by writing "element"{}, in the curly brackets, write CSS code-->
         <style>
             div1{
-                color: chocolate transparent;
+                color: chocolate;
                 background-color: grey;
                 font-size: 25px;
                 font-family: Arial, Helvetica, sans-serif;
@@ -131,6 +132,11 @@
         <div1 style="background-color: white;"> <!--you can override stuff too-->
             this is the power of CSS
         </div1>
+        <br/>
+        <!--needs the files to be linked(see line 9)-->
+        <div2 style="background-color: white;"> <!--you can also override external CSS-->
+            this is the power of external CSS
+        </div2>
 
         </main>
      

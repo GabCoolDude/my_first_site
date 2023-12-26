@@ -28,7 +28,7 @@
         <header style="color: red;">
             <p>Gab's CSS tutorial website</p>
         </header>
-
+        <hr/>
         <main> <!--sets background color-->
             <div style="background-color: blueviolet;">
                 <p>This is a paragraph</p>
@@ -114,6 +114,23 @@
         <p style="font-variant: small-caps; font-weight: bold; color: black;">
             Uhh Lorem ipsum dolor sit and other stuff 
         </p>
+
+        <!--everything above this is inline CSS, now we will write actual CSS code-->
+         
+        <!--specify which "element" you want to apply this style to
+         by writing "element"{}, in the curly brackets, write CSS code-->
+        <style>
+            div1{
+                color: chocolate transparent;
+                background-color: grey;
+                font-size: 25px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
+
+        <div1 style="background-color: white;"> <!--you can override stuff too-->
+            this is the power of CSS
+        </div1>
 
         </main>
      

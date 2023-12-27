@@ -1,3 +1,9 @@
 div2{
     color: red;
 }
+/*
+h1{
+    color:blue;
+}
+*/
+#my-id { color: blue;} /* replaces line4-line8 */

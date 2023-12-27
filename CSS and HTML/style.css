@@ -6,4 +6,17 @@ h1{
     color:blue;
 }
 */
-#my-id { color: blue;} /* replaces line4-line8 */
+#my-id { color: blue;} /* replaces line4-line8  and doesn't affect page2.html*/
+
+/* these are a classes */
+.fancy-border{
+    border: 3px dashed red;
+}
+
+.blue-text{color: blue;}
+
+/*classes get applied to html elements,
+ they can be given to many elements very easily*/
+
+ /*ids and classes are similar
+ however ids can be used for javascript stuff*/

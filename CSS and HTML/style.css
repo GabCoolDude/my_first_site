@@ -6,7 +6,7 @@ h1{
     color:blue;
 }
 */
-#my-id { color: blue;} /* replaces line4-line8  and doesn't affect page2.html*/
+#my-id { color: blue;} /*replaces line4-line8 and doesn't affect page2.html*/
 
 /* these are a classes */
 .fancy-border{
@@ -16,7 +16,33 @@ h1{
 .blue-text{color: blue;}
 
 /*classes get applied to html elements,
- they can be given to many elements very easily*/
+ they can be given to many elements very easily
 
- /*ids and classes are similar
- however ids can be used for javascript stuff*/
+ ids and classes are similar
+ however ids can be used for javascript stuff
+
+ the following code would highlight EVERYTHING on the page
+ a * can be used to select the whole page
+
+ *{
+    background-color: yellow;
+ }
+
+the following code affects multiple elements
+
+ h1, h2 + p{
+    color:blue;
+}
+
+the following code will choose everything within <body>
+
+[body]{
+    background-color: yellow;
+ }
+ 
+ there are way too many selector so just watch this video for more of them
+ https://www.youtube.com/watch?v=TbfIyjNTXbA&list=PLLAZ4kZ9dFpNO7ScZFr-WTmtcBY3AN1M7&index=12
+ or look at this page
+ https://www.w3schools.com/cssref/css_selectors.php
+ */
+ 

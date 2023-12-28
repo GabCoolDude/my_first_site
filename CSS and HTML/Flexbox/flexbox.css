@@ -15,7 +15,7 @@
   justify-content: center; /*aligns items at the center*/
   /*justify-content: flex-start;*/ /*aligns items at the beginning (default)*/
   /*justify-content: flex-end;*/ /*aligns items at the end*/
-  /*justify-content: space-around;*/ /*aligns items at the end*/
+  /*justify-content: space-around;*/ /*spaces item in the center*/
 
   /* there are so many of these just go look at this
     https://www.w3schools.com/css/css3_flexbox_container.asp

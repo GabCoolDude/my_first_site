@@ -1,129 +1,166 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <!--description of the website, used by search engines (Google)-->
-        <meta name="description" content="This is an awesome website">
-        <meta name="author" content="Gab">
-        <meta name="keywords" content="HTML, Tutorial">
-        <!--very important to make your website work on mobile and other-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Gab's HTML tutorial website</title>
-    </head>
-    <body>
-        <h1><big>Gab's</big> HTML tutorial <small>website</small></h1> <!--this is a header-->
-        <!--big,small,sub,sup can be used 
+  <head>
+    <meta charset="UTF-8" />
+    <!--description of the website, used by search engines (Google)-->
+    <meta name="description" content="This is an awesome website" />
+    <meta name="author" content="Gab" />
+    <meta name="keywords" content="HTML, Tutorial" />
+    <!--very important to make your website work on mobile and other-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gab's HTML tutorial website</title>
+  </head>
+  <body>
+    <h1><big>Gab's</big> HTML tutorial <small>website</small></h1>
+    <!--this is a header-->
+    <!--big,small,sub,sup can be used 
         in other things than paragraphs too(<p>)-->
-        <hr/> <!--creates horizontal line-->
-        <p><big>Welcome</big> <small>to</small> <b><i>my domain</i></b></p>
-        <br/> <!--the equivalent of pressing Enter in Word-->
-        <!--woah this is a comment-->
-        <p>Welcome</p> <!--this is a paragraph (line of text)-->
-        <p>H<sub>2</sub>0</p>
-        <p>10<sup>2</sup></p>
+    <hr />
+    <!--creates horizontal line-->
+    <p>
+      <big>Welcome</big> <small>to</small> <b><i>my domain</i></b>
+    </p>
+    <br />
+    <!--the equivalent of pressing Enter in Word-->
+    <!--woah this is a comment-->
+    <p>Welcome</p>
+    <!--this is a paragraph (line of text)-->
+    <p>H<sub>2</sub>0</p>
+    <p>10<sup>2</sup></p>
 
-        <!-- these are inline elements,they will be on the same line-->
-        <a href="#">link1</a> 
-        <a href="#">link2</a>
+    <!-- these are inline elements,they will be on the same line-->
+    <a href="#">link1</a>
+    <a href="#">link2</a>
 
-        <!--these are "block" elements, they will not go on the same line-->
-        <p>Hi</p>
-        <p>Hello</p>
+    <!--these are "block" elements, they will not go on the same line-->
+    <p>Hi</p>
+    <p>Hello</p>
 
-        <!--divs are for block,
+    <!--divs are for block,
         spans are for inline elements,
         they are useful for CSS styling-->
-        <span>span1</span>
-        <span>span2</span>
+    <span>span1</span>
+    <span>span2</span>
 
-        <div>div1</div>
-        <div>div2</div>
+    <div>div1</div>
+    <div>div2</div>
 
-        <form> <!--most of the time, is wrapper for input-->
-            <!--this is only to create a textbox, to do stuff with the input, you need javascript and probably a backend-->
-            <input type="text" value="Enter your name"/> 
-            <input type="password"/>
-            <input type="date"/>
-            <input type="range"/>
-            <input type="email"/>
-            <input type="file"/>
-            <input type="submit"/>
-            <input type="checkbox"/>
-        
-            <!--can only choose one at a time-->
-            <input name="btn1"type="radio"/>
-            <input name="btn1"type="radio"/>
-            <!-- there are many more types of input, just look at this page :
+    <form>
+      <!--most of the time, is wrapper for input-->
+      <!--this is only to create a textbox, to do stuff with the input, you need javascript and probably a backend-->
+      <input type="text" value="Enter your name" />
+      <input type="password" />
+      <input type="date" />
+      <input type="range" />
+      <input type="email" />
+      <input type="file" />
+      <input type="submit" />
+      <input type="checkbox" />
+
+      <!--can only choose one at a time-->
+      <input name="btn1" type="radio" />
+      <input name="btn1" type="radio" />
+      <!-- there are many more types of input, just look at this page :
             https://www.w3schools.com/TagS/att_input_type.asp-->
-        </form>
-        
+    </form>
 
-        <textarea rows ="10" cols="30">
+    <textarea rows="10" cols="30">
             Enter a paragraph
-        </textarea>
+        </textarea
+    >
 
-        
+    <table>
+      <!-- basic table -->
+      <thead>
+        <!-- it also has head and body stuff-->
+        <caption>
+          <h2>List of numbers</h2>
+        </caption>
+        <!--creates a caption-->
+        <tr>
+          <!-- creates a row -->
+          <th>num1</th>
+          <!-- th stands for tableheader -->
+          <th>num2</th>
+          <th>num3</th>
+        </tr>
+      </thead>
 
-        <table> <!-- basic table -->
-            <thead><!-- it also has head and body stuff-->
-                <caption><h2>List of numbers</h2></caption><!--creates a caption-->
-                <tr> <!-- creates a row -->
-                    <th>num1</th> <!-- th stands for tableheader -->
-                    <th>num2</th>
-                    <th>num3</th>
-                </tr>
-            </thead>
+      <tbody>
+        <tr>
+          <td>one</td>
+          <!-- td is for stuff you want to write in the table-->
+          <td colspan="2">two</td>
+          <!--collon span-->
+          <td>three</td>
+        </tr>
 
-            <tbody>
-                <tr>
-                    <td>one</td> <!-- td is for stuff you want to write in the table-->
-                    <td colspan="2">two</td> <!--collon span-->
-                    <td >three</td>
-                </tr>
+        <tr>
+          <td>four</td>
+          <td>five</td>
+          <td>six</td>
+        </tr>
+      </tbody>
+    </table>
 
-                <tr>
-                    <td>four</td>
-                    <td>five</td>
-                    <td>six</td>
-                </tr>
-            </tbody>
-            
-        </table>
+    <dl>
+      <dt>this is the letter a</dt>
+      <dd>a</dd>
+    </dl>
 
-        <dl>
-            <dt>this is the letter a</dt>
-            <dd>a</dd>
-        </dl>
+    <ol>
+      <!-- organised list -->
+      <li>a</li>
+      <!--well its a list alright-->
+      <li>b</li>
+      <ul>
+        <!-- unorganised list-->
+        <li>a</li>
+      </ul>
+      <li>c</li>
+      <li>d</li>
+    </ol>
 
-        <ol> <!-- organised list -->
-            <li>a</li> <!--well its a list alright-->
-            <li>b</li>
-            <ul> <!-- unorganised list-->
-                <li>a</li>
-            </ul>
-            <li>c</li>
-            <li>d</li>
-        </ol>
-        
-        <!--replaces the current page-->
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">not a rickroll</a>
-        <!--does not replace the current page-->
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><h1>not a rickroll 2</h1></a>
-        <a href="page2.html">Page 2</a> <!-- links to different page-->
-        <br/>
-        <br/>
-        <a href="shit idk/page3.html">Page 3</a>
-        <br/>
-        <!-- cat image -->
-        <img heigth="100" width="100" src="https://static.vecteezy.com/system/resources/thumbnails/021/830/103/small/realistic-cute-cat-cartoon-style-digital-artwork-free-png.png" alt="This image was deleted"/>
-        <br/>
-        <!--youtube video, this is the video i used to do all of this-->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/pQN-pnXPaVg?si=6XCAFSQZ90EkCmSR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <br/>
-        <iframe width="1000" height="800" frameborder="0" src="https://www.giraffeacademy.com/">Sorry, your browser does not support iframes</iframe>
+    <!--replaces the current page-->
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">not a rickroll</a>
+    <!--does not replace the current page-->
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
+      ><h1>not a rickroll 2</h1></a
+    >
+    <a href="page2.html">Page 2</a>
+    <!-- links to different page-->
+    <br />
+    <br />
+    <a href="shit idk/page3.html">Page 3</a>
+    <br />
+    <!-- cat image -->
+    <img
+      heigth="100"
+      width="100"
+      src="https://static.vecteezy.com/system/resources/thumbnails/021/830/103/small/realistic-cute-cat-cartoon-style-digital-artwork-free-png.png"
+      alt="This image was deleted"
+    />
+    <br />
+    <!--youtube video, this is the video i used to do all of this-->
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/pQN-pnXPaVg?si=6XCAFSQZ90EkCmSR"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+    <br />
+    <iframe
+      width="1000"
+      height="800"
+      frameborder="0"
+      src="https://www.giraffeacademy.com/"
+      >Sorry, your browser does not support iframes</iframe
+    >
 
-
-        <!-- organisation
+    <!-- organisation
 
             <header>
                 <nav>
@@ -147,5 +184,5 @@
 
             </footer>
 -->
-    </body>
+  </body>
 </html>

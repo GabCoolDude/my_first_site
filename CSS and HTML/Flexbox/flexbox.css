@@ -1,31 +1,30 @@
 .flex-container {
-    display: flex;
-    background-color: DodgerBlue;
-    /*flex-direction: column; */ /*remove comment to enable "vertical mode" from top to bottom */
-    /*flex-direction: column-reverse; */ /*remove comment to enable "vertical mode" from bottom to top */
-    /*flex-direction: row;*/ /*remove comment to do nothing (this is the default there is no need to specify this)*/
-    /*flex-direction: row-reverse;*/ /*remove comment to stack items from right to left (inverse) */
+  display: flex;
+  background-color: DodgerBlue;
+  /*flex-direction: column; */ /*remove comment to enable "vertical mode" from top to bottom */
+  /*flex-direction: column-reverse; */ /*remove comment to enable "vertical mode" from bottom to top */
+  /*flex-direction: row;*/ /*remove comment to do nothing (this is the default there is no need to specify this)*/
+  /*flex-direction: row-reverse;*/ /*remove comment to stack items from right to left (inverse) */
 
-    flex-wrap: wrap; /*The wrap value specifies that the flex items will wrap if necessary*/
-    /*flex-wrap: nowrap;*/ /*The nowrap value specifies that the flex items will not wrap (this is default) */
-    /*flex-wrap: wrap-reverse;*/ /*The wrap-reverse value specifies that the items will wrap in reverse order:*/
-    
-    flex-flow: row wrap; /*shorthand property for setting both the flex-direction and flex-wrap*/
+  flex-wrap: wrap; /*The wrap value specifies that the flex items will wrap if necessary*/
+  /*flex-wrap: nowrap;*/ /*The nowrap value specifies that the flex items will not wrap (this is default) */
+  /*flex-wrap: wrap-reverse;*/ /*The wrap-reverse value specifies that the items will wrap in reverse order:*/
 
-    justify-content: center; /*aligns items at the center*/
-    /*justify-content: flex-start;*/ /*aligns items at the beginning (default)*/
-    /*justify-content: flex-end;*/ /*aligns items at the end*/
-    /*justify-content: space-around;*/ /*aligns items at the end*/
+  flex-flow: row wrap; /*shorthand property for setting both the flex-direction and flex-wrap*/
 
-    /* there are so many of these just go look at this
+  justify-content: center; /*aligns items at the center*/
+  /*justify-content: flex-start;*/ /*aligns items at the beginning (default)*/
+  /*justify-content: flex-end;*/ /*aligns items at the end*/
+  /*justify-content: space-around;*/ /*aligns items at the end*/
+
+  /* there are so many of these just go look at this
     https://www.w3schools.com/css/css3_flexbox_container.asp
     and https://www.w3schools.com/css/css3_flexbox_items.asp */
-
 }
-  
+
 .flex-container > div {
-    background-color: #f1f1f1;
-    margin: 10px;
-    padding: 20px;
-    font-size: 30px;
-  }
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}

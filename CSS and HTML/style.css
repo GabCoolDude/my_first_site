@@ -1,19 +1,23 @@
-div2{
-    color: red;
+div2 {
+  color: red;
 }
 /*
 h1{
     color:blue;
 }
 */
-#my-id { color: blue;} /*replaces line4-line8 and doesn't affect page2.html*/
+#my-id {
+  color: blue;
+} /*replaces line4-line8 and doesn't affect page2.html*/
 
 /* these are a classes */
-.fancy-border{
-    border: 3px dashed red;
+.fancy-border {
+  border: 3px dashed red;
 }
 
-.blue-text{color: blue;}
+.blue-text {
+  color: blue;
+}
 
 /*classes get applied to html elements,
  they can be given to many elements very easily
@@ -45,4 +49,3 @@ the following code will choose everything within <body>
  or look at this page
  https://www.w3schools.com/cssref/css_selectors.php
  */
- 

@@ -1,3 +1,3 @@
-@import "style.css" /* if this were applied to a html file, all the styling from style.css would also be applied*/
+@import "style.css"; /* if this were applied to a html file, all the styling from style.css would also be applied*/
 
 /*note: you can override styling from imported CSS files*/

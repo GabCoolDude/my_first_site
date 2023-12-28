@@ -1,44 +1,83 @@
-@keyframes change-color { /*@keyframes to start an animation, don't forget to name it */
-    from {background-color: salmon}
-    to {background-color: lightblue;}
-    } /*the code above will change the background color FROM salmon TO light blue */
+@keyframes change-color {
+  /*@keyframes to start an animation, don't forget to name it */
+  from {
+    background-color: salmon;
+  }
+  to {
+    background-color: lightblue;
+  }
+} /*the code above will change the background color FROM salmon TO light blue */
 
 /*make sure to create a class that uses the animation and to assign it to and html element */
-.box-animation{
-    animation-name: change-color; /*tells CSS to use the animation named "change-color"*/
-    animation-duration: 4s; /*tells CSS the animation should last 4 seconds*/
-    animation-iteration-count: infinite; /*tells CSS to run the animation infinitely*/
-   }
+.box-animation {
+  animation-name: change-color; /*tells CSS to use the animation named "change-color"*/
+  animation-duration: 4s; /*tells CSS the animation should last 4 seconds*/
+  animation-iteration-count: infinite; /*tells CSS to run the animation infinitely*/
+}
 
-@keyframes change-color2 { 
-    /*you can use percentages instead of from... to...*/
-    0% {background-color: red}
-    15% {background-color: orange;}
-    30% {background-color: yellow;}
-    45% {background-color: green;}
-    70% {background-color: blue;}
-    100% {background-color: purple;}
-    } 
+@keyframes change-color2 {
+  /*you can use percentages instead of from... to...*/
+  0% {
+    background-color: red;
+  }
+  15% {
+    background-color: orange;
+  }
+  30% {
+    background-color: yellow;
+  }
+  45% {
+    background-color: green;
+  }
+  70% {
+    background-color: blue;
+  }
+  100% {
+    background-color: purple;
+  }
+}
 
-.box-animation2{
-    animation-name: change-color2; /*tells CSS to use the animation named "change-color"*/
-    animation-duration: 3s; /*tells CSS the animation should last 2 seconds*/
-    animation-iteration-count: 5; /*tells CSS to run the animation 5 times*/
-    }
-    
+.box-animation2 {
+  animation-name: change-color2; /*tells CSS to use the animation named "change-color"*/
+  animation-duration: 3s; /*tells CSS the animation should last 2 seconds*/
+  animation-iteration-count: 5; /*tells CSS to run the animation 5 times*/
+}
 
-@keyframes change-color3 { 
-    /*you can use percentages instead of from... to...*/
-    0% {background-color: red}
-    15% {background-color: orange; top:10px; left: 10px;}
-    30% {background-color: yellow; top:20px; left: 20px;}
-    45% {background-color: green; top:30px; left: 30px;}
-    70% {background-color: blue; top:40px; left: 40px;}
-    100% {background-color: purple; top:50px; left: 50px;}
-     } 
+@keyframes change-color3 {
+  /*you can use percentages instead of from... to...*/
+  0% {
+    background-color: red;
+  }
+  15% {
+    background-color: orange;
+    top: 10px;
+    left: 10px;
+  }
+  30% {
+    background-color: yellow;
+    top: 20px;
+    left: 20px;
+  }
+  45% {
+    background-color: green;
+    top: 30px;
+    left: 30px;
+  }
+  70% {
+    background-color: blue;
+    top: 40px;
+    left: 40px;
+  }
+  100% {
+    background-color: purple;
+    top: 50px;
+    left: 50px;
+  }
+}
 
-.box-animation3:hover{ /*:hover will make it only happen on hover */
-    position: relative;
-    animation-name: change-color3; /*tells CSS to use the animation named "change-color"*/
-    animation-duration: 3s; /*tells CSS the animation should last 2 seconds*/
-   }
+.box-animation3:hover {
+  /*:hover will make it only happen on hover */
+  position: relative;
+  animation-name: change-color3; /*tells CSS to use the animation named "change-color"*/
+  animation-duration: 3s; /*tells CSS the animation should last 2 seconds*/
+}

@@ -25,3 +25,27 @@ const age = 32
 age = 33
 
 console.log(age);  this would throw an error*/
+
+/* Data types do not need to be explicit in JS, this means you do not need to specify them
+Here is a list of all data types : String, Numbers, Boolean, null, undefined
+String : used for text
+Numbers : used for numbers
+Boolean : true or false 
+null : empty variables
+undefined : variable with no value*/
+
+const name = "John";
+const myAge = 22;
+const rating = 3.5; // this will also be in the the numbers data type
+const isCool = true;
+const x = null;
+const y = undefined;
+let z;
+
+console.log(typeof name);
+console.log(typeof myAge);
+console.log(typeof rating);
+console.log(typeof isCool);
+console.log(typeof x); // there is a bug since the first version of JS where null will return object instead of null
+console.log(typeof y);
+console.log(typeof z);

@@ -54,3 +54,16 @@ console.log(typeof z);
 console.log("My name is " + first_name + " and I am " + myAge + " years old"); // old and annoying method
 // new and awesome way
 console.log(`My name is ${first_name} and I am ${myAge} years old`); // make to use back quotes otherwise not work
+
+// String methods
+const s = "Hello world";
+
+console.log(s.length); // logs the length of the string
+console.log(s.toUpperCase()); // puts all the contents of the string to upper case
+console.log(s.toLowerCase()); // puts all the contents of the string to lower case
+console.log(s.substring(0, 5)); //logs only the specified letters (0 being the first letter)
+console.log(s.substring(0, 5).toUpperCase()); // you can stack these
+console.log(s.split("")); // splits every letter into one array
+
+const tags = "technology, computer, coding, tutorial";
+console.log(tags.split(","));

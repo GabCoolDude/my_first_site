@@ -60,7 +60,7 @@ console.log(typeof z);
 
 // Concatenation
 console.log("My name is " + first_name + " and I am " + myAge + " years old"); // old and annoying method
-// new and awesome way
+// new and awesome way of concatenating
 console.log(`My name is ${first_name} and I am ${myAge} years old`); // make to use back quotes otherwise not work
 
 // String methods
@@ -98,3 +98,32 @@ console.log(names);
 // console.log(Array.isArray("John Doe")) checks if something is an array, in this case no
 
 console.log(names.indexOf("Gab")); // prints where a variable of an array is
+
+// Object literals
+const person = {
+  first_name: "Mike",
+  last_name: "Cox",
+  age: 21,
+  hobbies: ["music", "video games", "coding"],
+  address: {
+    street: "50 main st",
+    city: "Boston",
+    state: "MA",
+  },
+};
+
+console.log(person); // "prints" the whole object
+console.log(person.address.street); // "prints" only the street name
+console.log(person.first_name, person.last_name); // you can "print" multiple at a time
+console.log(person.hobbies[1]); // you can "print" an element of an array
+
+const { last_name } = person; // "pulls out" of an object the last name variable
+console.log(last_name); // and then prints it
+
+const {
+  address: { city },
+} = person; // "pulls out" of an object the city variable
+console.log(city); // and then prints it
+
+person.email = "mikecox@gmail.com"; // you can add properties to an object
+console.log(person);

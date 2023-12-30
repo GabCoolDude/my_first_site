@@ -198,3 +198,50 @@ const todoCompleted = TODOs.filter(function (todo) {
   return todo.text;
 });
 console.log(todoCompleted);
+
+// Conditions
+const a = "15";
+const b = "10";
+
+if (a == 15) {
+  /* == will ignore the data type so in this case its true*/
+  console.log("a is 15");
+}
+
+if (a === 15) {
+  /* === will NOT ignore the data type so in this case its false*/
+  console.log("a is 15");
+} else if (a > 5) {
+  console.log("a is greater than 10");
+} else {
+  console.log("a is less than 10");
+}
+
+if (b > 5 || a > 20) {
+  // "||" represents "or"
+  console.log("b is more than 5 or a is more than 10");
+}
+
+if (b > 5 && a > 20) {
+  // "&&" means "and"
+  console.log("b is more than 5 and a is more than 10");
+}
+// Ternary operator ( shorthand if statement )
+const c = 11;
+
+const color = c > 10 ? "red" : "blue"; // if x is less than 10 then color = red, else color = blue
+console.log(color);
+
+// switch statements ( another way to check condition )
+
+switch (color) {
+  case "red": // if color is red
+    console.log("color is red");
+    break;
+  case "blue": // if color is blue
+    console.log("color is blue");
+    break;
+  default: // else
+    console.log("color is nor blue or red");
+    break;
+}

@@ -145,7 +145,7 @@ const TODOs = [
   {
     id: 3,
     text: "Dentist appointment",
-    isCompleted: false,
+    isCompleted: true,
   },
 ];
 
@@ -175,3 +175,26 @@ while (i <= 5) {
 for (let todo of TODOs) {
   console.log(todo.isCompleted);
 }
+
+/* High order array methods:
+forEach: loops through the arrays
+map: allows to create new arrays from an array
+filter: create a new array based of a condition
+*/
+TODOs.forEach(function (todo) {
+  console.log(todo.text);
+});
+
+const todoID = TODOs.map(function (todo) {
+  return todo.id;
+});
+console.log(todoID);
+
+/* this one may be a bit confusing but what we're doing is "looking" for something that is true 
+and then printing the text of that something*/
+const todoCompleted = TODOs.filter(function (todo) {
+  return todo.isCompleted === true;
+}).map(function (todo) {
+  return todo.text;
+});
+console.log(todoCompleted);

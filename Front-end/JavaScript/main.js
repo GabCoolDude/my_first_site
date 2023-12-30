@@ -255,6 +255,14 @@ addNums();
 addNums(5, 4);
 
 function addNumbers(num1 = 0, num2 = 0) {
+  // if we didnt put num1 = 0, num2 = 0
   return num1 + num2; // recommended
 }
 console.log(addNumbers(5, 9));
+
+// arrow functions
+
+const addNumeros = (num1 = 0, num2 = 0) => {
+  return num1 + num2;
+};
+console.log(addNumeros(3, 5));

@@ -267,7 +267,7 @@ const addNumeros = (num1 = 0, num2 = 0) => {
 };
 console.log(addNumeros(3, 5));
 
-// OOP (Object Oriented Programming)
+// OOP (Object Oriented Programming) pre-ES6
 
 // This is a constructor function
 function Person(firstName, lastName, dob) {
@@ -276,10 +276,10 @@ function Person(firstName, lastName, dob) {
   this.dob = new Date(dob);
   /*this.getBirthYear = function () {
     return this.dob.getFullYear();
-  }; this is not need anymore ( see line 285 )*/
+  }; 
   this.getFullName = function () {
     return `${this.firstName} ${this.lastName}`;
-  };
+  }; this is not need anymore ( see line 285-293 )*/
 }
 
 /* prototype is useful to get rid of "objects" we might not use/need,
@@ -301,3 +301,28 @@ console.log(person1);
 console.log(person2.dob.getFullYear());
 console.log(person2.getBirthYear());
 console.log(person1.getFullName());
+
+/* OOB post-ES6 (ES6 Classes) 
+Classes and constructor functions basically do the same thing
+however classes look nicer to the human eye,
+so i recommend classes*/
+
+class People {
+  constructor(firstName, lastName, dob) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.dob = new Date(dob);
+  }
+
+  birthYear() {
+    return this.dob.getFullYear();
+  }
+
+  fullName() {
+    return `${this.firstName} ${this.lastName}`;
+  }
+}
+
+const people1 = new People("Isaac", "Marovitz", "8/8/1984");
+
+console.log(people1);

@@ -3,6 +3,8 @@ press F12 on google for dev tools, then click on console (this is basically the 
 
 Use MDN (mozilla developer network) for JS documentation :
 https://developer.mozilla.org/en-US/docs/Web/JavaScript
+
+also i followed this tutorial : https://www.youtube.com/watch?v=hdI2bqOjy3c&t=2s
 */
 
 // single line comment
@@ -149,3 +151,6 @@ const TODOs = [
 
 console.log(TODOs);
 console.log(TODOs[1]);
+
+// JSON
+const todoJSON = JSON.stringify(TODOs); // converts TODOs to JSON syntax so it's ready to send to server (if server uses json)

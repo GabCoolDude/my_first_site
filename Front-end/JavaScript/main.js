@@ -274,13 +274,24 @@ function Person(firstName, lastName, dob) {
   this.firstName = firstName;
   this.lastName = lastName;
   this.dob = new Date(dob);
-  this.getBirthYear = function () {
+  /*this.getBirthYear = function () {
     return this.dob.getFullYear();
-  };
+  }; this is not need anymore ( see line 285 )*/
   this.getFullName = function () {
     return `${this.firstName} ${this.lastName}`;
   };
 }
+
+/* prototype is useful to get rid of "objects" we might not use/need,
+ they will not be attached with every instant of an object
+ but we can still utilize them if necessary*/
+Person.prototype.getBirthYear = function () {
+  return this.dob.getFullYear();
+};
+
+Person.prototype.getFullName = function () {
+  return `${this.firstName} ${this.lastName}`;
+};
 
 // we then need to instantiate an object
 const person1 = new Person("John", "Doe", "1/1/1984");

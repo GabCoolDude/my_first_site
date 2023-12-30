@@ -273,7 +273,7 @@ console.log(addNumeros(3, 5));
 function Person(firstName, lastName, dob) {
   this.firstName = firstName;
   this.lastName = lastName;
-  this.dob = dob;
+  this.dob = new Date(dob);
 }
 
 // we then need to instantiate an object
@@ -281,4 +281,4 @@ const person1 = new Person("John", "Doe", "1/1/1984");
 const person2 = new Person("Gab", "Me", "2/2/1984");
 
 console.log(person1);
-console.log(person2.firstName);
+console.log(person2.dob.getFullYear());

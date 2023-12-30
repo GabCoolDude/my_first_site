@@ -127,3 +127,25 @@ console.log(city); // and then prints it
 
 person.email = "mikecox@gmail.com"; // you can add properties to an object
 console.log(person);
+
+// Arrays of objects
+const TODOs = [
+  {
+    id: 1,
+    text: "Do the dishes",
+    isCompleted: true,
+  },
+  {
+    id: 2,
+    text: "Take out the trash",
+    isCompleted: false,
+  },
+  {
+    id: 3,
+    text: "Dentist appointment",
+    isCompleted: false,
+  },
+];
+
+console.log(TODOs);
+console.log(TODOs[1]);

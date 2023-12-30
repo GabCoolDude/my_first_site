@@ -245,3 +245,16 @@ switch (color) {
     console.log("color is nor blue or red");
     break;
 }
+
+// Functions
+function addNums(num1 = 0, num2 = 0) {
+  console.log(num1 + num2); // not recommended
+}
+
+addNums();
+addNums(5, 4);
+
+function addNumbers(num1 = 0, num2 = 0) {
+  return num1 + num2; // recommended
+}
+console.log(addNumbers(5, 9));

@@ -154,3 +154,24 @@ console.log(TODOs[1]);
 
 // JSON
 const todoJSON = JSON.stringify(TODOs); // converts TODOs to JSON syntax so it's ready to send to server (if server uses json)
+
+// For loops
+for (
+  let i = 0; //base
+  i <= TODOs.length; // what we want to check
+  i++ // the thing to get out of the loop
+) {
+  console.log(`For loop number : ${i}`);
+}
+
+// While loops
+let i = 0;
+while (i <= 5) {
+  console.log(`While loop number : ${i}`);
+  i++; // MAKE SURE TO HAVE A WAY TO GET OUT OF A WHILE LOOP OTHERWISE YOU WILL BE STUCK
+}
+
+// For of loops
+for (let todo of TODOs) {
+  console.log(todo.isCompleted);
+}

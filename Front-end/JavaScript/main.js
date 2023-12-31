@@ -255,7 +255,7 @@ addNums();
 addNums(5, 4);
 
 function addNumbers(num1 = 0, num2 = 0) {
-  // if we didnt put num1 = 0, num2 = 0
+  // if we didnt put num1 = 0, num2 = 0, it would say NaN
   return num1 + num2; // recommended
 }
 console.log(addNumbers(5, 9));

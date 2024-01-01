@@ -21,7 +21,7 @@ console.warn("This is a warning"); // creates a warn message in the console
 /* these are the 3 variable : var, let ,const,
 var is no longer recommended, because if 2 vars have the same name there will be a conflict
 "let" lets you change the value of the variable after you originally set it
-"const" is short for constant, it cannot be changed 
+"const" is short for constant, the value of a variable cannot be changed 
 
 it is recommended to always use const, unless you know you need to change the value, then use let*/
 
@@ -38,11 +38,12 @@ console.log(age);  this would throw an error*/
 
 /* Data types do not need to be explicit in JS, this means you do not need to specify them
 Here is a list of all data types : String, Numbers, Boolean, null, undefined
-String : used for text
-Numbers : used for numbers
+String : text
+Numbers : numbers
 Boolean : true or false 
 null : empty variables
-undefined : variable with no value*/
+undefined : variable with no value
+*/
 
 const first_name = "John";
 const myAge = 22;
@@ -56,21 +57,21 @@ console.log(typeof first_name);
 console.log(typeof myAge);
 console.log(typeof rating);
 console.log(typeof isCool);
-console.log(typeof x); // there is a bug since the first version of JS where null will return object instead of null
+console.log(typeof x); // there is a bug since the first version of JS where null will return "object" instead of "null"
 console.log(typeof y);
 console.log(typeof z);
 
 // Concatenation
-console.log("My name is " + first_name + " and I am " + myAge + " years old"); // old and annoying method
-// new and awesome way of concatenating
+console.log("My name is " + first_name + " and I am " + myAge + " years old"); // old and annoying method, don't use this
+// new and awesome way of concatenating, use this
 console.log(`My name is ${first_name} and I am ${myAge} years old`); // make to use back quotes otherwise not work
 
 // String methods
 const s = "Hello world";
 
 console.log(s.length); // logs the length of the string
-console.log(s.toUpperCase()); // puts all the contents of the string to upper case
-console.log(s.toLowerCase()); // puts all the contents of the string to lower case
+console.log(s.toUpperCase()); // upper case
+console.log(s.toLowerCase()); // lower case
 console.log(s.substring(0, 5)); //logs only the specified letters (0 being the first letter AND NOT 1)
 console.log(s.substring(0, 5).toUpperCase()); // you can stack these
 console.log(s.split("")); // splits every letter into one array

@@ -36,5 +36,13 @@ ul.children[1].innerText = "Gab"; // innerText is another way of changing the te
 ul.lastElementChild.innerHTML = "<h1>Hi, how ya doing ?</h1>"; // you can use innerHTML to write HTML in JS
 
 const btn = document.querySelector(".btn");
-btn.style.background = "red"; /* This is basically CSS in JS.
-For example, this can be used to modify the color of a button when it is pressed*/
+/* btn.style.background = "red"; This is basically CSS in JS.
+For example, this can be used to modify the color of a button when it is pressed,
+for practical purposes, this is commented out because we'll be doing that anyway when we'll get onto events*/
+
+//Events
+
+btn.addEventListener("click", (e) => {
+  e.preventDefault(); // prevents the "click" from going away
+  console.log("click");
+}); // addEventListener has 2 parameters, the event we want and the second is a function
